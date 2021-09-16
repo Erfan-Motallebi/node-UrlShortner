@@ -7,7 +7,8 @@ const urlSchema = new mongoose.Schema({
     required: true,
   },
   shortUrl: {
-    type: mongoose.SchemaTypes.String,
+    type: String,
+    required: true,
     default: () => nanoid(),
   },
 });
